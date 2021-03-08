@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://jack:test123@cluster0.hagrh.mongodb.net/myFirstDatabase')
+
+mongoose.connect('mongodb+srv://jack:appleisgood@cluster0.hagrh.mongodb.net/myFirstDatabase',{ useNewUrlParser: true })
 mongoose.connection.once('open', () => {
     console.log('conneted to database');
 });
